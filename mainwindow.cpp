@@ -83,10 +83,10 @@ void heapify(std::vector<Estudiante>& arr, int n, int i) {
     int right = 2 * i + 2;
 
     // Comparar para ordenar de mayor a menor (mayor nota primero)
-    if (left < n && arr[left].getNota() < arr[largest].getNota()) // Cambiado el signo '>'
+    if (left < n && arr[left].getNota() < arr[largest].getNota())
         largest = left;
 
-    if (right < n && arr[right].getNota() < arr[largest].getNota()) // Cambiado el signo '>'
+    if (right < n && arr[right].getNota() < arr[largest].getNota())
         largest = right;
 
     if (largest != i) {
@@ -175,7 +175,7 @@ void MainWindow::on_QuickSortButton_clicked()
     ui->tableWidget2->setColumnWidth(1, 100);
     ui->tableWidget2->setColumnWidth(2, 45);
 
-    // Insertar los datos ordenados en tableWidget1
+    // Insertar los datos ordenados en tableWidget2
     for (const auto& estudiante : estudiantes) {
         int rowCount = ui->tableWidget2->rowCount();
         ui->tableWidget2->insertRow(rowCount);
@@ -200,7 +200,7 @@ void MainWindow::on_ShellSortButton_clicked()
         }
     }
 
-    // Limpiar tableWidget1
+    // Limpiar tableWidget3
     ui->tableWidget3->clearContents();
     ui->tableWidget3->setRowCount(0);  // Limpiar las filas anteriores
 
@@ -213,7 +213,7 @@ void MainWindow::on_ShellSortButton_clicked()
     ui->tableWidget3->setColumnWidth(1, 100);
     ui->tableWidget3->setColumnWidth(2, 45);
 
-    // Insertar los datos ordenados en tableWidget1
+    // Insertar los datos ordenados en tableWidget3
     for (const auto& estudiante : estudiantes) {
         int rowCount = ui->tableWidget3->rowCount();
         ui->tableWidget3->insertRow(rowCount);
