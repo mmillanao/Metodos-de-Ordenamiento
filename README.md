@@ -1,6 +1,6 @@
-#Estructura del Proyecto
+# **Estructura del Proyecto**
 
-##Carpetas
+## **Carpetas**
 
 ###libraries:
 Contiene los archivos fuente necesarios para implementar los métodos de ordenamiento y las clases relacionadas:
