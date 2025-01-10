@@ -21,7 +21,7 @@ FORMS += \
     mainwindow.ui
 
 TRANSLATIONS += \
-    Tarea3_Intento2_es_CL.ts
+    Metodos_ordenamiento_es_CL.ts
 CONFIG += lrelease
 CONFIG += embed_translations
 
