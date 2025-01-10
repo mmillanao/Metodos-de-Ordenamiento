@@ -1,8 +1,8 @@
-Estructura del Proyecto
+#Estructura del Proyecto
 
-Carpetas
+##Carpetas
 
-libraries:
+###libraries:
 Contiene los archivos fuente necesarios para implementar los métodos de ordenamiento y las clases relacionadas:
 
 Persona.h y Persona.cpp
@@ -15,7 +15,7 @@ Quicksort.h y Quicksort.cpp
 
 Shellsort.h y Shellsort.cpp
 
-src:
+###src:
 Contiene los archivos principales para ejecutar los métodos de ordenamiento:
 
 MainHeapsort.cpp
@@ -24,7 +24,7 @@ MainQuicksort.cpp
 
 MainShellsort.cpp
 
-ui:
+###ui:
 Contiene los archivos relacionados con la interfaz gráfica de Qt:
 
 MainWindow.ui: Diseño de la ventana principal.
@@ -32,9 +32,6 @@ MainWindow.ui: Diseño de la ventana principal.
 MainWindow.h y MainWindow.cpp: Lógica de la ventana principal.
 
 SortingVisualizer.h y SortingVisualizer.cpp: Implementación de la visualización de los algoritmos.
-
-resources:
-Recursos adicionales como íconos e imágenes para mejorar la interfaz gráfica.
 
 Archivos
 
@@ -49,8 +46,4 @@ Interfaz intuitiva que permite:
 
 Seleccionar el algoritmo a ejecutar.
 
-Ingresar el número de elementos y sus valores.
-
-Controlar la velocidad de la visualización.
-
-Código modular para facilitar la extensión del proyecto con nuevos algoritmos.
+Ingresar el número de elementos y sus respectivos atributos.
