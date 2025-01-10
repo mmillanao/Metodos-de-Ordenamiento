@@ -33,7 +33,7 @@ MainWindow.h y MainWindow.cpp: Lógica de la ventana principal.
 
 SortingVisualizer.h y SortingVisualizer.cpp: Implementación de la visualización de los algoritmos.
 
-Archivos
+## Archivos
 
 CMakeLists.txt:
 Archivo de configuración para compilar el proyecto con soporte para Qt y las bibliotecas de los algoritmos de ordenamiento.
