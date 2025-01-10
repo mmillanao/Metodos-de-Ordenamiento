@@ -193,7 +193,7 @@ void MainWindow::on_ShellSortButton_clicked()
         for (int i = gap; i < n; i++) {
             Estudiante temp = estudiantes[i];
             int j;
-            for (j = i; j >= gap && estudiantes[j - gap].getNota() > temp.getNota(); j -= gap) {
+            for (j = i; j >= gap && estudiantes[j - gap].getNota() < temp.getNota(); j -= gap) {
                 estudiantes[j] = estudiantes[j - gap];
             }
             estudiantes[j] = temp;
