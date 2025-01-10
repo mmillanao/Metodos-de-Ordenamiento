@@ -40,3 +40,15 @@ Archivo principal que inicializa la aplicación, crea la ventana principal y la 
 Archivo generado automáticamente por Qt Designer, que define la interfaz gráfica de la aplicación. Incluye:
 * Botones: Vinculados a las funciones que ejecutan los algoritmos y gestionan la lista de estudiantes.
 * Tablas: Diseñadas para mostrar y organizar los datos.
+### Como ejecutar
+1. Descargue e instale el software Qt Creator desde su página oficial `<link>` : <https://www.qt.io/download-dev>
+2.Descargue el repositorio del proyecto como un archivo comprimido y descomprímalo en una carpeta.
+3. Abra la aplicación de Qt Creator, seleccione la opción *Open Project* ,  busque la carpeta descomprimida y seleccione todos los archivos, excepto el readme.
+4. Esto lo rediccionará a la configuración del projecto, donde se le preguntará que constructor utilizará, en este caso seleccione *Desktop Qt 6.7.0 MinGw 64-bit*  y haga clic en *Configure Project*. Debería aparecer una interfaz similar a la siguiente: ![Captura de pantalla 2025-01-10 194443](https://github.com/user-attachments/assets/659caf67-1fe9-4242-9534-b3df1424a185)
+5. Para ejecutar el proyecto, haga click en el botón *Run* , el cual se encuentra en la esquina inferior izquierda. Si aparece un error de crasheo, debe de cambiar el Debug, ya que posiblemente esté utilizando el de window y no el del Qt, por lo que debe de seleccionar el que se mencionó en la instrucción anterior. ![imagen_2025-01-10_200606630](https://github.com/user-attachments/assets/7ff6313e-2527-4c83-930c-ad834edd71ba)
+6.Una vez que la aplicación se inicie correctamente, verá la ventana principal, donde podrá:
+* Ingresar los datos de los estudiantes.
+* Seleccionar uno de los métodos de ordenamiento (Heapsort, Quicksort o Shellsort).
+* Visualizar los resultados en las tablas correspondientes. ![imagen_2025-01-10_202403449](https://github.com/user-attachments/assets/ffc42df3-1ea5-4ac6-a75c-262480e5b6d3)
+### Ejemplo y resultado
+![imagen_2025-01-10_205014685](https://github.com/user-attachments/assets/a4aae893-02c7-4038-a72b-3c112f5128f9)
