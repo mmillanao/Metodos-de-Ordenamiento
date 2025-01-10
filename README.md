@@ -2,7 +2,7 @@
 
 ## **Carpetas**
 
-###libraries:
+### **libraries:**
 Contiene los archivos fuente necesarios para implementar los métodos de ordenamiento y las clases relacionadas:
 
 Persona.h y Persona.cpp
@@ -15,7 +15,7 @@ Quicksort.h y Quicksort.cpp
 
 Shellsort.h y Shellsort.cpp
 
-###src:
+### **src:**
 Contiene los archivos principales para ejecutar los métodos de ordenamiento:
 
 MainHeapsort.cpp
@@ -24,7 +24,7 @@ MainQuicksort.cpp
 
 MainShellsort.cpp
 
-###ui:
+### **ui:**
 Contiene los archivos relacionados con la interfaz gráfica de Qt:
 
 MainWindow.ui: Diseño de la ventana principal.
