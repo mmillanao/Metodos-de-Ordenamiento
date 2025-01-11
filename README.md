@@ -21,7 +21,20 @@ Una vez que la aplicación se inicie correctamente, verá la ventana principal:
 ![imagen_2025-01-10_205014685](https://github.com/user-attachments/assets/a4aae893-02c7-4038-a72b-3c112f5128f9)
 
 ### Métodos de ordenamiento
-MONSE
+#### Método Shellsort  
+El método **Shellsort** es un algoritmo de ordenamiento basado en inserciones directas, que mejora el rendimiento dividiendo la lista en **sublistas** y ordenándolas utilizando **intervalos decrecientes**. En este caso, el intervalo comienza como la mitad del tamaño del vector y se reduce sucesivamente. Los elementos separados por el intervalo se comparan, y si un elemento es menor, se mueve hacia adelante. Al reducir el intervalo a 1, el algoritmo se convierte en una inserción directa, pero como la lista ya está casi ordenada, el número de movimientos necesarios es mínimo.  
+
+El algoritmo inicia cuando el usuario ingresa los nombres y notas de los estudiantes. Se validan las notas para asegurarse de que estén dentro del rango permitido. Posteriormente, los estudiantes se ordenan por nota de mayor a menor, aplicando el algoritmo Shellsort con intervalos decrecientes y comparaciones basadas en las notas. Finalmente, se imprime la lista ordenada.  
+
+#### Método Quicksort  
+Es un algoritmo de ordenamiento eficiente que funciona seleccionando un **pivote** y dividiendo la lista en dos sublistas: una con las notas mayores o iguales al pivote y otra con las notas menores.  
+Cuando el usuario agrega estudiantes a la lista, se validan sus respectivas notas para asegurarse de que estén dentro del rango asignado en el código, que en este caso es entre **1 y 7**.  
+El proceso recursivo divide la lista según el valor del pivote. La condición base de la recursión se cumple cuando la sublista tiene un solo elemento o está vacía. Durante la partición, las notas de los estudiantes se organizan alrededor del pivote, colocando los elementos mayores o iguales al pivote a la izquierda (o hacia arriba) y los menores a la derecha (o hacia abajo), devolviendo la posición final del pivote.  
+Finalmente, el algoritmo recorre el vector ordenado e imprime la lista de estudiantes, ordenada por nota de mayor a menor.  
+
+#### Método Heapsort  
+Organiza los elementos utilizando la estructura de datos **MAX HEAP**. Se emplea un método privado para reorganizar el vector de estudiantes, el cual verifica si el nodo padre es el mayor comparado con sus hijos izquierdo y derecho. Si el nodo padre no es el mayor, intercambia la raíz con el hijo mayor y aplica **heapify** en el subárbol afectado. Luego, se reduce el tamaño del **HEAP** y se vuelve a aplicar **heapify** para restablecer la propiedad del **MAX HEAP**. Finalmente, el algoritmo recorre el vector ordenado y muestra la lista de estudiantes con sus respectivas notas, organizada de manera descendente.  
+
 ### Estructura del proyecto
 El proyecto se organiza en varios archivos que implementan la lógica, su interfaz  gráfica y los algoritmos de ordenamiento. A continuación se describe brevemente la función de cada uno.
 #### estudiante.h y estudiante.cpp
