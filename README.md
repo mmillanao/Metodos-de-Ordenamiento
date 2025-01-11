@@ -58,15 +58,10 @@ Contienen la definición y la lógica principal de la ventana principal de la ap
 *  `void MainWindow::on_ShellSortButton_clicked()` : Ordena los estudiantes usando Quicksort y muestra los resultados en la tercera tabla.
 *  `void updateTabla();` : Función que actualiza las tablas de la interfaz gráfica con los datos procesados.
 
-#### Mainwindow.cpp
-Este archivo se genera autmaticamente por **Qt Meta Object Compiler**, se incluyen metadatos y logica para manejar señales y ranuras en Qt.
-Se registran los metodos que actuan como ranuras en la clase **MainWindow**. Estas ranuras corresponden a acciones que se ejecutan al interactuar con botones de la interfaz. **mainwindow.h** es el archivo de encabezado que contiene la declaración de la clase MainWindow. **qmetatype.h** es el encargado de proporcionar tipos de datos y funciones necesarias para el sistema de metadatos de Qt.
-
-* on_addButton_clicked, se ejecuta al presionar el botón **Añadir**.
-* on_removeButton_clicked, remueve elementos.
-* on_HeapSortButton_clicked, llama al método que aplica el algoritmo HeapSort.
-* on_QuickSortButton_clicked, llama al método que aplica el algoritmo QuickSort.
-* on_ShellSortButton_clicked, llama al método que aplica el algoritmo ShellSort. 
+#### Mainwindow.cpp  
+Este archivo automatiza el manejo de los eventos de la interfaz gráfica, permitiendo que los botones interactúen con los algoritmos o las acciones de la aplicación.  
+Se registran los métodos que actúan como ranuras en la clase **MainWindow**. Estas ranuras corresponden a acciones que se ejecutan al interactuar con los botones de la interfaz.  
+El archivo **mainwindow.h** contiene la declaración de la clase **MainWindow**, mientras que **qmetatype.h** proporciona los tipos de datos y las funciones necesarias para el sistema de metadatos de Qt.  
 
 #### main.cpp
 Archivo principal que inicializa la aplicación, crea la ventana principal y la muestra al usuario.
