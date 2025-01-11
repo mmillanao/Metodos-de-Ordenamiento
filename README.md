@@ -59,9 +59,7 @@ Contienen la definición y la lógica principal de la ventana principal de la ap
 *  `void updateTabla();` : Función que actualiza las tablas de la interfaz gráfica con los datos procesados.
 
 #### Mainwindow.cpp  
-Este archivo automatiza el manejo de los eventos de la interfaz gráfica, permitiendo que los botones interactúen con los algoritmos o las acciones de la aplicación.  
-Se registran los métodos que actúan como ranuras en la clase **MainWindow**. Estas ranuras corresponden a acciones que se ejecutan al interactuar con los botones de la interfaz.  
-El archivo **mainwindow.h** contiene la declaración de la clase **MainWindow**, mientras que **qmetatype.h** proporciona los tipos de datos y las funciones necesarias para el sistema de metadatos de Qt.  
+Este código implementa una interfaz en Qt para gestionar estudiantes, permitiendo agregar, eliminar y ordenar estudiantes por sus notas. Utiliza un `QTableWidget` para mostrar los datos en tres tablas diferentes, con columnas para nombre, apellido y nota. Implementa tres algoritmos de ordenamiento: **HeapSort**, **QuickSort** y **ShellSort**, cada uno asociado a un botón que ordena y muestra los estudiantes en una tabla separada. La validación de datos asegura que el nombre, apellido y la nota sean correctos antes de agregar un estudiante. También maneja la eliminación de estudiantes seleccionados de la lista y la tabla. 
 
 #### main.cpp
 Archivo principal que inicializa la aplicación, crea la ventana principal y la muestra al usuario.
